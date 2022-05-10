@@ -1,0 +1,11 @@
+@import "../variables/variables";
+
+@mixin noticia {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+@mixin texto {
+    margin: 50px 10px 0px 5px;
+}

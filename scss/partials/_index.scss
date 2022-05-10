@@ -1,0 +1,191 @@
+@import "../variables/variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background:linear-gradient(to top, rgba(233, 231, 238, 0.623) 0%, rgba(206, 209, 250, 0.74) 100%), url("https://xboxplay.games/uploadStream/12165.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: left;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+
+div .texto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: rgb(34, 34, 34);
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background-color: skyblue;
+    border: 1px solid;
+    padding: 5px;
+    transition: height 2s;
+}
+
+ul li {
+    list-style: none;
+}
+
+.form {
+    width: 400px;
+    background: rgb(34, 34, 34);
+    padding: 30px;
+    margin: auto;
+    margin-top: 800px;
+    margin-right: 760px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.login {
+    border: 0;
+}
+
+.register {
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #1f53c5;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.form p {
+    text-align: center;
+    height: 40px;
+    font-size: 18px;
+}
+
+
+.form a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form .botton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.footer {
+    color: black;
+    margin-top: 820px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-noticia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.contenedor__noticia--pc {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.noticia-pc .noticia-img img {
+    margin: 50px;
+}
+
+
+.noticia-pc2 {
+    margin-top: 50px;
+}
+
+
+.noticia-pc2 .noticia__2--pc img {
+    height: 443px;
+    width: 770px;
+    margin: 50px;
+}
+
+
+@media screen and (max-width: 1260px) {
+    .contenedor__noticia--pc .noticia-pc {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .noticia-pc .noticia-img {
+        align-items: auto center;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .contenedor__noticia--pc .noticia-pc2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .noticia-pc2 .noticia-texto2 {
+        align-items: center;
+    }
+}

@@ -1,0 +1,10 @@
+@import "../variables/variables";
+@import "mixins.scss";
+
+.noticia-pc2-noticia-pc {
+    @include noticia;
+}
+
+.noticia-pc .noticia-texto {
+    @include texto
+}
